@@ -1,15 +1,16 @@
 {
   "name": "@juzousatoru2/easy-logger",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "easy tool for better console logs",
   "main": "index.js",
   "scripts": {
     "test": "node examples/test.js",
-    "format": "prettier --write index.js",
-    "lint": "eslint index.js"
+    "format": "prettier --write index.js middleware.js",
+    "lint": "eslint index.js middleware.js"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "middleware.js"
   ],
   "repository": {
     "type": "git",

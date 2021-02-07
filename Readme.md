@@ -73,3 +73,18 @@ easylogger.success('custom status', {
   customStatus: chalk.yellow('DEBUG'),
 });
 ```
+## Express middleware
+
+Easy-Logger comes with an pre-made express middleware for logging since 0.0.3.
+
+```js
+//...
+const easylogger = require('@juzousatoru2/easy-logger/middleware');
+
+app.use(easylogger);
+
+// Or add it to specific routes
+app.get('/api', easylogger, (req, res) => {
+  res.status(200);
+});
+```
