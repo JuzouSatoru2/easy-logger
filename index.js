@@ -55,52 +55,48 @@ const handleOptions = (option) => {
   return finalOptions;
 };
 
-class easylogger {
-  /**
-   * Simple log informations
-   *
-   * @param {String} msg
-   * @param {Object} option
-   */
-  static info(msg, option) {
-    logger(icons.info, chalk.blue('info   '), msg, handleOptions(option));
-  }
-  /**
-   * Simple warn informations
-   *
-   * @param {String} msg
-   * @param {Object} option
-   */
-  static warn(msg, option) {
-    logger(icons.warning, chalk.yellow('warn   '), msg, handleOptions(option));
-  }
-  /**
-   * Simple logs errors
-   *
-   * @param {String} msg
-   * @param {Object} option
-   */
-  static error(msg, option) {
-    logger(icons.error, chalk.red('error  '), msg, handleOptions(option));
-  }
-  /**
-   * Simple debug logs
-   *
-   * @param {String} msg
-   * @param {Object} option
-   */
-  static debug(msg, option) {
-    logger(icons.warning, chalk.yellow('debug  '), msg, handleOptions(option));
-  }
-  /**
-   * Simple success message
-   *
-   * @param {String} msg
-   * @param {Object} option
-   */
-  static success(msg, option) {
-    logger(icons.success, chalk.green('success'), msg, handleOptions(option));
-  }
-}
-
-module.exports = easylogger;
+/**
+ * Simple log informations
+ *
+ * @param {String} msg
+ * @param {Object} option
+ */
+module.exports.info = function info(msg, option) {
+  logger(icons.info, chalk.blue('info   '), msg, handleOptions(option));
+};
+/**
+ * Simple warn informations
+ *
+ * @param {String} msg
+ * @param {Object} option
+ */
+module.exports.warn = function warn(msg, option) {
+  logger(icons.warning, chalk.yellow('warn   '), msg, handleOptions(option));
+};
+/**
+ * Simple logs errors
+ *
+ * @param {String} msg
+ * @param {Object} option
+ */
+module.exports.error = function error(msg, option) {
+  logger(icons.error, chalk.red('error  '), msg, handleOptions(option));
+};
+/**
+ * Simple debug logs
+ *
+ * @param {String} msg
+ * @param {Object} option
+ */
+module.exports.debug = function debug(msg, option) {
+  logger(icons.warning, chalk.yellow('debug  '), msg, handleOptions(option));
+};
+/**
+ * Simple success message
+ *
+ * @param {String} msg
+ * @param {Object} option
+ */
+module.exports.success = function success(msg, option) {
+  logger(icons.success, chalk.green('success'), msg, handleOptions(option));
+};
