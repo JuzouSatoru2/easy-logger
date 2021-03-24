@@ -8,9 +8,11 @@
 
 > Easy tool for better console logs
 
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/JuzouSatoru2/easy-logger?style=flat-square) ![GitHub package.json version](https://img.shields.io/github/package-json/v/JuzouSatoru2/easy-logger?style=flat-square)
+Disclaimer: Package has not the username since its not possible to rename the npm account.
 
-<img src="https://github.com/JuzouSatoru2/easy-logger/blob/main/examples/Screenshot.JPG" width="500" />
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Alex289/easy-logger?style=flat-square) ![GitHub package.json version](https://img.shields.io/github/package-json/v/Alex289/easy-logger?style=flat-square)
+
+<img src="https://github.com/Alex289/easy-logger/blob/main/examples/Screenshot.JPG" width="500" />
 
 <br>
 
